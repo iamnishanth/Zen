@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 Tasks</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+
+        header {
+            height: 40px;
+            background-color: #660000;
+        }
+
+        header p {
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+
+        .top-table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .inside-table td {
+            border: none;
+        }
+
+        td p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>
+            Request For New PAN Card Or/And Changes Or Correction in PAN
+            Data <br />
+            <i>Fields marked with * (asterisk) are mandatory. . To avoid
+                mistake(s), please refer guidelines and instructions .</i>
+        </p>
+    </header>
+    <form autocomplete="off">
+        <table class="top-table">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>* Whether citizen of India</strong>
+                        <input type="radio" name="citizen" id="" />
+                        <label for="citizan">Yes</label>
+                        <input type="radio" name="citizen" id="" />
+                        <label for="citizan">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>* Permanent Account Number (PAN)</strong>
+                        <input type="text" name="PAN" id="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td colspan="2">
+                        <strong>* 1. Name</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>Title </strong>
+                        <input type="radio" name="title" />
+                        <label for="title">Shri/Mr</label>
+                        <input type="radio" name="title" />
+                        <label for="title">Smt./Mrs.</label>
+                        <input type="radio" name="title" />
+                        <label for="title">Kumari/Ms</label>
+                        <input type="radio" name="title" />
+                        <label for="title">M/s</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <table width="100%" class="inside-table">
+                            <tbody>
+                                <td>
+                                    <strong>Last Name/Surname</strong>
+                                    <br />
+                                    <input type="text" name="lastname" />
+                                </td>
+                                <td>
+                                    <strong>First Name</strong>
+                                    <br />
+                                    <input type="text" name="firstname" />
+                                </td>
+                                <td>
+                                    <strong>Middle Name</strong>
+                                    <br />
+                                    <input type="text" name="middlename" />
+                                </td>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <p>
+                            <strong>* Name as you would like it printed on the
+                                card</strong>
+                            (Prefix like Shri, Smt, Kumari, Late, Dr, CA,
+                            Ms, Mr, Mrs, M/s, Alias etc. are not allowed)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <p>
+                            <strong>Details of Parents.</strong> (Prefix
+                            like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr,
+                            Mrs, M/s, Alias etc. are not allowed.)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>
+                            Whether mother is single parent and you wish to
+                            apply for PAN by furnishing the name of your
+                            mother only</strong>
+                    </td>
+                    <td>
+                        <input type="radio" name="mothersingle" />
+                        <label for="mothersingle">Yes</label>
+                        <input type="radio" name="mothersingle" />
+                        <label for="mothersingle">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="father" />
+                    </td>
+                    <td colspan="2">
+                        <p>
+                            <strong>*Father's Name</strong>(Mandatory field.
+                            Even married women should give father's name
+                            only.)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <table width="100%" class="inside-table">
+                            <tbody>
+                                <td>
+                                    <strong>Last Name/Surname</strong>
+                                    <br />
+                                    <input type="text" name="lastname" />
+                                </td>
+                                <td>
+                                    <strong>First Name</strong>
+                                    <br />
+                                    <input type="text" name="firstname" />
+                                </td>
+                                <td>
+                                    <strong>Middle Name</strong>
+                                    <br />
+                                    <input type="text" name="middlename" />
+                                </td>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="mother" />
+                    </td>
+                    <td colspan="2">
+                        <p>
+                            <strong>Mother's Name</strong>(This field is
+                            optional)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <table width="100%" class="inside-table">
+                            <tbody>
+                                <td>
+                                    <strong>Last Name/Surname</strong>
+                                    <br />
+                                    <input type="text" name="lastname" />
+                                </td>
+                                <td>
+                                    <strong>First Name</strong>
+                                    <br />
+                                    <input type="text" name="firstname" />
+                                </td>
+                                <td>
+                                    <strong>Middle Name</strong>
+                                    <br />
+                                    <input type="text" name="middlename" />
+                                </td>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p>
+                            <strong>
+                                Select Parent name which is to be printed on
+                                the card</strong>
+                            (In case no option is provided then PAN card
+                            will be issued with father's name)
+                        </p>
+                    </td>
+                    <td>
+                        <input type="radio" name="fatherormother" />
+                        <label for="fatherormother">Father Name</label>
+                        <input type="radio" name="fatherormother" />
+                        <label for="fatherormother">Mother Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>* 5. Date of
+                            Birth/Incorporation/Agreement/Partnership or
+                            Trust Deed/Formation of Body of Individuals/
+                            Association of Persons</strong>
+                    </td>
+                    <td colspan="2">
+                        <table width="100%" class="inside-table">
+                            <tbody>
+                                <td>
+                                    <strong>DD</strong>
+                                    <br />
+                                    <select name="DD">
+                                        <option value="">DD</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <strong>MM</strong>
+                                    <br />
+                                    <select name="MM">
+                                        <option value="">MM</option>
+                                        <option value="01">JAN</option>
+                                        <option value="02">FEB</option>
+                                        <option value="03">MAR</option>
+                                        <option value="04">APR</option>
+                                        <option value="05">MAY</option>
+                                        <option value="06">JUN</option>
+                                        <option value="07">JUL</option>
+                                        <option value="08">AUG</option>
+                                        <option value="09">SEP</option>
+                                        <option value="10">OCT</option>
+                                        <option value="11">NOV</option>
+                                        <option value="12">DEC</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <strong>YYYY</strong>
+                                    <br />
+                                    <input type="text" name="YYYY" maxlength="4" />
+                                </td>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>*6. Gender</strong>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" />
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" />
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" />
+                        <label for="gender">TransGender</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>7. Photo Mismatch</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>8. Signature Mismatch</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="commaddress" />
+                    </td>
+                    <td>
+                        <strong>* 9. Address for Communication</strong>
+                    </td>
+                    <td>
+                        <input type="radio" name="resoroff" />
+                        <label for="resoroff">Residential</label>
+                        <input type="radio" name="resoroff" />
+                        <label for="resoroff">Office</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p>
+                            <strong>Office Name</strong>
+                            <i>(to be filled only in case of office
+                                address)</i>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="officenmae" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Flat/Door/Block No.</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="flat" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Name of Premises/Building/Village</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="buildingname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Road/Street/Lane/Post Office</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="road" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Area/Locality/Taluka/Sub-Division</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="area" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Town/City/District</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="city" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>State/Union Territory</strong>
+                    </td>
+                    <td>
+                        <select name="state">
+                            <option value="">-- Please Select --</option>
+                            <option value="1">
+                                Andaman &amp; Nicobar Islands
+                            </option>
+                            <option value="2">Andhra Pradesh</option>
+                            <option value="3">Arunachal Pradesh</option>
+                            <option value="4">Assam</option>
+                            <option value="5">Bihar</option>
+                            <option value="6">Chandigarh</option>
+                            <option value="33">Chhattisgarh</option>
+                            <option value="7">
+                                Dadara &amp; Nagar Haveli
+                            </option>
+                            <option value="8">Daman &amp; Diu</option>
+                            <option value="9">Delhi</option>
+                            <option value="10">Goa</option>
+                            <option value="11">Gujarat</option>
+                            <option value="12">Haryana</option>
+                            <option value="13">Himachal Pradesh</option>
+                            <option value="14">Jammu &amp; Kashmir</option>
+                            <option value="35">Jharkhand</option>
+                            <option value="15">Karnataka</option>
+                            <option value="16">Kerala</option>
+                            <option value="17">Lakhswadeep</option>
+                            <option value="18">Madhya Pradesh</option>
+                            <option value="19">Maharashtra</option>
+                            <option value="20">Manipur</option>
+                            <option value="21">Meghalaya</option>
+                            <option value="22">Mizoram</option>
+                            <option value="23">Nagaland</option>
+                            <option value="24">Orissa</option>
+                            <option value="25">Pondicherry</option>
+                            <option value="26">Punjab</option>
+                            <option value="27">Rajasthan</option>
+                            <option value="28">Sikkim</option>
+                            <option value="29">Tamil Nadu</option>
+                            <option value="36">Telangana</option>
+                            <option value="30">Tripura</option>
+                            <option value="31">Uttar Pradesh</option>
+                            <option value="34">Uttaranchal</option>
+                            <option value="32">West Bengal</option>
+                            <option value="37">Ladakh</option>
+                            <option value="99">Outside India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p>
+                            <strong>PIN </strong><i>(Indicating PIN is mandatory)</i>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="pincode" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>State/Union Territory</strong>
+                    </td>
+                    <td>
+                        <select name="country" disabled>
+                            <option value="-1">-- Please select --</option>
+                            <option value="AR">ARGENTINA</option>
+                            <option value="AU">AUSTRALIA</option>
+                            <option value="AT">AUSTRIA</option>
+                            <option value="BH">BAHRAIN</option>
+                            <option value="BD">BANGLADESH</option>
+                            <option value="BB">BARBADOS</option>
+                            <option value="BY">BELARUS</option>
+                            <option value="BE">BELGIUM</option>
+                            <option value="BM">BERMUDA</option>
+                            <option value="BT">BHUTAN</option>
+                            <option value="BW">BOTSWANA</option>
+                            <option value="BR">BRAZIL</option>
+                            <option value="BN">BRUNEI DARUSSALAM</option>
+                            <option value="BG">BULGARIA</option>
+                            <option value="KH">CAMBODIA</option>
+                            <option value="CM">CAMEROON</option>
+                            <option value="CA">CANADA</option>
+                            <option value="CV">CAPE VERDE</option>
+                            <option value="KY">CAYMAN ISLANDS</option>
+                            <option value="CN">CHINA</option>
+                            <option value="CU">CUBA</option>
+                            <option value="CY">CYPRUS</option>
+                            <option value="CZ">CZECH REPUBLIC</option>
+                            <option value="KP">
+                                DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA (North
+                                Korea)
+                            </option>
+                            <option value="DK">DENMARK</option>
+                            <option value="EG">EGYPT</option>
+                            <option value="SV">EL SALVADOR</option>
+                            <option value="ER">ERITREA</option>
+                            <option value="EE">ESTONIA</option>
+                            <option value="ET">ETHIOPIA</option>
+                            <option value="FJ">FIJI</option>
+                            <option value="FI">FINLAND</option>
+                            <option value="FR">FRANCE</option>
+                            <option value="GE">GEORGIA</option>
+                            <option value="DE">GERMANY</option>
+                            <option value="GH">GHANA</option>
+                            <option value="GR">GREECE</option>
+                            <option value="GY">GUYANA</option>
+                            <option value="HK">HONG KONG</option>
+                            <option value="HU">HUNGARY</option>
+                            <option value="IS">ICELAND</option>
+                            <option value="ID">INDONESIA</option>
+                            <option value="IQ">IRAQ</option>
+                            <option value="IE">IRELAND</option>
+                            <option value="IR">
+                                ISLAMIC REPUBLIC OF IRAN
+                            </option>
+                            <option value="IL">ISRAEL</option>
+                            <option value="IT">ITALY</option>
+                            <option value="JP">JAPAN</option>
+                            <option value="JO">JORDAN</option>
+                            <option value="KE">KENYA</option>
+                            <option value="KW">KUWAIT</option>
+                            <option value="LV">LATVIA</option>
+                            <option value="LU">LUXEMBOURG</option>
+                            <option value="MO">MACAO</option>
+                            <option value="MW">MALAWI</option>
+                            <option value="MY">MALAYSIA</option>
+                            <option value="MV">MALDIVES</option>
+                            <option value="MU">MAURITIUS</option>
+                            <option value="MX">MEXICO</option>
+                            <option value="MN">MONGOLIA</option>
+                            <option value="MA">MOROCCO</option>
+                            <option value="NA">NAMIBIA</option>
+                            <option value="NR">NAURU</option>
+                            <option value="NP">NEPAL</option>
+                            <option value="NL">NETHERLANDS</option>
+                            <option value="NZ">NEW ZEALAND</option>
+                            <option value="NE">NIGER</option>
+                            <option value="NG">NIGERIA</option>
+                            <option value="NO">NORWAY</option>
+                            <option value="OM">OMAN</option>
+                            <option value="PK">PAKISTAN</option>
+                            <option value="PA">PANAMA</option>
+                            <option value="PG">PAPUA NEW GUINEA</option>
+                            <option value="PH">PHILIPPINES</option>
+                            <option value="PL">POLAND</option>
+                            <option value="PT">PORTUGAL</option>
+                            <option value="QA">QATAR</option>
+                            <option value="KR">
+                                REPUBLIC OF KOREA (South Korea)
+                            </option>
+                            <option value="RO">ROMANIA</option>
+                            <option value="RU">RUSSIAN FEDERATION</option>
+                            <option value="RW">RWANDA</option>
+                            <option value="WS">SAMOA</option>
+                            <option value="SA">SAUDI ARABIA</option>
+                            <option value="SN">SENEGAL</option>
+                            <option value="SG">SINGAPORE</option>
+                            <option value="ZA">SOUTH AFRICA</option>
+                            <option value="ES">SPAIN</option>
+                            <option value="LK">SRI LANKA</option>
+                            <option value="SD">SUDAN</option>
+                            <option value="SE">SWEDEN</option>
+                            <option value="CH">SWITZERLAND</option>
+                            <option value="TW">
+                                TAIWAN, PROVINCE OF CHINA
+                            </option>
+                            <option value="TH">THAILAND</option>
+                            <option value="CD">
+                                THE DEMOCRATIC REPUBLIC OF THE CONGO
+                            </option>
+                            <option value="TN">TUNISIA</option>
+                            <option value="TR">TURKEY</option>
+                            <option value="UG">UGANDA</option>
+                            <option value="UA">UKRAINE</option>
+                            <option value="AE">UNITED ARAB EMIRATES</option>
+                            <option value="GB">UNITED KINGDOM</option>
+                            <option value="TZ">
+                                UNITED REPUBLIC OF TANZANIA
+                            </option>
+                            <option value="US">UNITED STATES</option>
+                            <option value="UY">URUGUAY</option>
+                            <option value="VN">VIET NAM</option>
+                            <option value="YE">YEMEN</option>
+                            <option value="ZM">ZAMBIA</option>
+                            <option value="ZW">ZIMBABWE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p><strong>ZIP </strong></p>
+                    </td>
+                    <td>
+                        <input type="text" name="zip" disabled />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>10. If you desire to update your other address,
+                            give required details &
+                            <u>Submit proof of other address also.</u></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="telno" /></td>
+                    <td>
+                        <p>
+                            <strong> * 11. Telephone No.</strong>(Country
+                            code is compulsory)
+                        </p>
+                    </td>
+                    <td colspan="2">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <p>Country Code (ISD code)</p>
+                                        <br />
+                                        <select name="telcode">
+                                            <option value="-1">
+                                                -- Please select --
+                                            </option>
+                                            <option value="54">
+                                                ARGENTINA (54)
+                                            </option>
+                                            <option value="A61">
+                                                AUSTRALIA (61)
+                                            </option>
+                                            <option value="43">
+                                                AUSTRIA (43)
+                                            </option>
+                                            <option value="973">
+                                                BAHRAIN (973)
+                                            </option>
+                                            <option value="880">
+                                                BANGLADESH (880)
+                                            </option>
+                                            <option value="1246">
+                                                BARBADOS (1246)
+                                            </option>
+                                            <option value="375">
+                                                BELARUS (375)
+                                            </option>
+                                            <option value="32">
+                                                BELGIUM (32)
+                                            </option>
+                                            <option value="1441">
+                                                BERMUDA (1441)
+                                            </option>
+                                            <option value="975">
+                                                BHUTAN (975)
+                                            </option>
+                                            <option value="267">
+                                                BOTSWANA (267)
+                                            </option>
+                                            <option value="55">
+                                                BRAZIL (55)
+                                            </option>
+                                            <option value="673">
+                                                BRUNEI DARUSSALAM (673)
+                                            </option>
+                                            <option value="359">
+                                                BULGARIA (359)
+                                            </option>
+                                            <option value="855">
+                                                CAMBODIA (855)
+                                            </option>
+                                            <option value="237">
+                                                CAMEROON (237)
+                                            </option>
+                                            <option value="A1">
+                                                CANADA (1)
+                                            </option>
+                                            <option value="238">
+                                                CAPE VERDE (238)
+                                            </option>
+                                            <option value="1345">
+                                                CAYMAN ISLANDS (1345)
+                                            </option>
+                                            <option value="86">
+                                                CHINA (86)
+                                            </option>
+                                            <option value="53">
+                                                CUBA (53)
+                                            </option>
+                                            <option value="357">
+                                                CYPRUS (357)
+                                            </option>
+                                            <option value="420">
+                                                CZECH REPUBLIC (420)
+                                            </option>
+                                            <option value="850">
+                                                DEMOCRATIC PEOPLE'S REPUBLIC
+                                                OF KOREA(NORTH KOREA) (850)
+                                            </option>
+                                            <option value="45">
+                                                DENMARK (45)
+                                            </option>
+                                            <option value="20">
+                                                EGYPT (20)
+                                            </option>
+                                            <option value="503">
+                                                EL SALVADOR (503)
+                                            </option>
+                                            <option value="291">
+                                                ERITREA (291)
+                                            </option>
+                                            <option value="372">
+                                                ESTONIA (372)
+                                            </option>
+                                            <option value="251">
+                                                ETHIOPIA (251)
+                                            </option>
+                                            <option value="679">
+                                                FIJI (679)
+                                            </option>
+                                            <option value="358">
+                                                FINLAND (358)
+                                            </option>
+                                            <option value="33">
+                                                FRANCE (33)
+                                            </option>
+                                            <option value="995">
+                                                GEORGIA (995)
+                                            </option>
+                                            <option value="49">
+                                                GERMANY (49)
+                                            </option>
+                                            <option value="233">
+                                                GHANA (233)
+                                            </option>
+                                            <option value="30">
+                                                GREECE (30)
+                                            </option>
+                                            <option value="592">
+                                                GUYANA (592)
+                                            </option>
+                                            <option value="852">
+                                                HONG KONG (852)
+                                            </option>
+                                            <option value="36">
+                                                HUNGARY (36)
+                                            </option>
+                                            <option value="354">
+                                                ICELAND (354)
+                                            </option>
+                                            <option value="91">
+                                                INDIA (91)
+                                            </option>
+                                            <option value="62">
+                                                INDONESIA (62)
+                                            </option>
+                                            <option value="964">
+                                                IRAQ (964)
+                                            </option>
+                                            <option value="353">
+                                                IRELAND (353)
+                                            </option>
+                                            <option value="98">
+                                                ISLAMIC REPUBLIC OF IRAN
+                                                (98)
+                                            </option>
+                                            <option value="972">
+                                                ISRAEL (972)
+                                            </option>
+                                            <option value="39">
+                                                ITALY (39)
+                                            </option>
+                                            <option value="81">
+                                                JAPAN (81)
+                                            </option>
+                                            <option value="962">
+                                                JORDAN (962)
+                                            </option>
+                                            <option value="254">
+                                                KENYA (254)
+                                            </option>
+                                            <option value="965">
+                                                KUWAIT (965)
+                                            </option>
+                                            <option value="371">
+                                                LATVIA (371)
+                                            </option>
+                                            <option value="352">
+                                                LUXEMBOURG (352)
+                                            </option>
+                                            <option value="853">
+                                                MACAO (853)
+                                            </option>
+                                            <option value="265">
+                                                MALAWI (265)
+                                            </option>
+                                            <option value="60">
+                                                MALAYSIA (60)
+                                            </option>
+                                            <option value="960">
+                                                MALDIVES (960)
+                                            </option>
+                                            <option value="230">
+                                                MAURITIUS (230)
+                                            </option>
+                                            <option value="52">
+                                                MEXICO (52)
+                                            </option>
+                                            <option value="976">
+                                                MONGOLIA (976)
+                                            </option>
+                                            <option value="A212">
+                                                MOROCCO (A212)
+                                            </option>
+                                            <option value="B264">
+                                                NAMIBIA (264)
+                                            </option>
+                                            <option value="674">
+                                                NAURU (674)
+                                            </option>
+                                            <option value="977">
+                                                NEPAL (977)
+                                            </option>
+                                            <option value="31">
+                                                NETHERLANDS (31)
+                                            </option>
+                                            <option value="A64">
+                                                NEW ZEALAND (64)
+                                            </option>
+                                            <option value="227">
+                                                NIGER (227)
+                                            </option>
+                                            <option value="234">
+                                                NIGERIA (234)
+                                            </option>
+                                            <option value="B47">
+                                                NORWAY (47)
+                                            </option>
+                                            <option value="968">
+                                                OMAN (968)
+                                            </option>
+                                            <option value="92">
+                                                PAKISTAN (92)
+                                            </option>
+                                            <option value="507">
+                                                PANAMA (507)
+                                            </option>
+                                            <option value="675">
+                                                PAPUA NEW GUINEA (675)
+                                            </option>
+                                            <option value="63">
+                                                PHILIPPINES (63)
+                                            </option>
+                                            <option value="48">
+                                                POLAND (48)
+                                            </option>
+                                            <option value="351">
+                                                PORTUGAL (351)
+                                            </option>
+                                            <option value="974">
+                                                QATAR (974)
+                                            </option>
+                                            <option value="82">
+                                                REPUBLIC OF KOREA(SOUTH
+                                                KOREA) (82)
+                                            </option>
+                                            <option value="40">
+                                                ROMANIA (40)
+                                            </option>
+                                            <option value="B7">
+                                                RUSSIAN FEDERATION (7)
+                                            </option>
+                                            <option value="250">
+                                                RWANDA (250)
+                                            </option>
+                                            <option value="685">
+                                                SAMOA (685)
+                                            </option>
+                                            <option value="966">
+                                                SAUDI ARABIA (966)
+                                            </option>
+                                            <option value="221">
+                                                SENEGAL (221)
+                                            </option>
+                                            <option value="65">
+                                                SINGAPORE (65)
+                                            </option>
+                                            <option value="27">
+                                                SOUTH AFRICA (27)
+                                            </option>
+                                            <option value="34">
+                                                SPAIN (34)
+                                            </option>
+                                            <option value="94">
+                                                SRI LANKA (94)
+                                            </option>
+                                            <option value="B249">
+                                                SUDAN (249)
+                                            </option>
+                                            <option value="46">
+                                                SWEDEN (46)
+                                            </option>
+                                            <option value="41">
+                                                SWITZERLAND (41)
+                                            </option>
+                                            <option value="886">
+                                                TAIWAN, PROVINCE OF CHINA
+                                                (886)
+                                            </option>
+                                            <option value="66">
+                                                THAILAND (66)
+                                            </option>
+                                            <option value="243">
+                                                THE DEMOCRATIC REPUBLIC OF
+                                                THE CONGO (243)
+                                            </option>
+                                            <option value="216">
+                                                TUNISIA (216)
+                                            </option>
+                                            <option value="90">
+                                                TURKEY (90)
+                                            </option>
+                                            <option value="256">
+                                                UGANDA (256)
+                                            </option>
+                                            <option value="380">
+                                                UKRAINE (380)
+                                            </option>
+                                            <option value="971">
+                                                UNITED ARAB EMIRATES (971)
+                                            </option>
+                                            <option value="44">
+                                                UNITED KINGDOM (44)
+                                            </option>
+                                            <option value="255">
+                                                UNITED REPUBLIC OF TANZANIA
+                                                (255)
+                                            </option>
+                                            <option value="B1">
+                                                UNITED STATES (1)
+                                            </option>
+                                            <option value="598">
+                                                URUGUAY (598)
+                                            </option>
+                                            <option value="84">
+                                                VIET NAM (84)
+                                            </option>
+                                            <option value="967">
+                                                YEMEN (967)
+                                            </option>
+                                            <option value="260">
+                                                ZAMBIA (260)
+                                            </option>
+                                            <option value="263">
+                                                ZIMBABWE (263)
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="mobortel" />Mobile No
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="mobortel" />Telephone No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Area/STD Code</p>
+                                        <br />
+                                        <input type="text" name="stdcode" />
+                                    </td>
+                                    <td>
+                                        <p>Telephone No./ Mobile No</p>
+                                        <br />
+                                        <input type="text" name="mobnum" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>Email id</strong>
+                    </td>
+                    <td>
+                        <input type="email" name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p>In case of a citizen of India, then</p>
+                    </td>
+                    <td colspan="2">
+                        <input type="radio" name="indiacitizen" />
+                        <label for="indiacitizen">AADHAAR</label>
+                        <input type="radio" name="citizen" />
+                        <label for="indiacitizen">EID</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="aadhaar" /></td>
+                    <td><strong>* 12. AADHAAR number :</strong></td>
+                    <td>
+                        <input type="text" name="aadhaar" />
+                        <br />
+                        <strong><i>In case AADHAAR number is provided, then
+                                proof of AADHAAR along with supporting
+                                documents is to be submitted to NSDL</i></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p>
+                            * Name as per AADHAAR letter or as per the
+                            enrollment ID of Aadhaar application form
+                        </p>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="nameinaadhaar" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><strong>13. GSTN</strong></td>
+                    <td colspan="2">
+                        <input type="text" name="gstn" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pans" /></td>
+                    <td colspan="2">
+                        <strong>14. Mention other Permanent Account Numbers
+                            (PANs) if any,inadvertently allotted to you.
+                            <u>Submit proof of surrendered PAN(s) along
+                                with the application.</u>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>PAN1</strong>
+                        <input type="text" name="pan1" />
+                    </td>
+                    <td>
+                        <strong>PAN2</strong>
+                        <input type="text" name="pan2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>PAN3</strong>
+                        <input type="text" name="pan3" />
+                    </td>
+                    <td>
+                        <strong>PAN4</strong>
+                        <input type="text" name="pan4" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2"><strong>15. Verification</strong></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <p>
+                            I/We <input type="text" />
+
+                            ,the applicant,in the capacity of
+                            <select name="panverify">
+                                <option value="">
+                                    -- Please Select --
+                                </option>
+                                <option value="01">Himself/herself</option>
+                                <option value="07">
+                                    Representative Assessee
+                                </option>
+                            </select>
+                            do hereby declare that what is stated above is
+                            true to the best of my information and belief.
+                        </p>
+                        <p>
+                            I have enclosed <input type="text" />(number of
+                            documents) in support of proposed
+                            changes/corrections.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        Place
+                        <input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <p>Verfied today, the 26-12-2020</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <p>
+                            I/We have enclosed
+                            <select name="panverify1">
+                                <option title="-- Please Select --">
+                                    -- Please Select --
+                                </option>
+                                <option value="9" title="Copy of passport">
+                                    Copy of passport
+                                </option>
+                                <option value="36"
+                                    title="Copy of Person of Indian Origin card issued by Government of India">
+                                    Copy of Person of Indian Origin card issued
+                                    by Government of India
+                                </option>
+                                <option value="37"
+                                    title="Copy of Overseas Citizenship of India card issued by Government of India">
+                                    Copy of Overseas Citizenship of India card
+                                    issued by Government of India
+                                </option>
+                                <option value="33"
+                                    title="Copy of National ID/Citizenship ID/Taxpayer ID attested by Indian Embassy/Consulate/High Commission/Apostille/authorised officials of overseas branches of Scheduled Banks registered in India">
+                                    Copy of National ID/Citizenship ID/Taxpayer
+                                    ID attested by Indian Embassy/Consulate/High
+                                    Commission/Apostille/authorised officials of
+                                    overseas branches of Scheduled Banks
+                                    registered in India
+                                </option>
+                            </select>
+                            as proof of identity,
+                            <select name="pan_add">
+                                <option value="" selected="" title="-- Please select --">
+                                    -- Please select --
+                                </option>
+                                <option value="8" title="Copy of passport">
+                                    Copy of passport
+                                </option>
+                                <option value="5" title="Copy of Bank account statement in the country of residence">
+                                    Copy of Bank account statement in the
+                                    country of residence
+                                </option>
+                                <option value="38"
+                                    title="Copy of certificate of residence in India or Residential permit issued by the State Police Authority">
+                                    Copy of certificate of residence in India or
+                                    Residential permit issued by the State
+                                    Police Authority
+                                </option>
+                                <option value="39"
+                                    title="Copy of the registration certificate issued by the Foreigner's Registration Office showing Indian address">
+                                    Copy of the registration certificate issued
+                                    by the Foreigner's Registration Office
+                                    showing Indian address
+                                </option>
+                                <option value="40"
+                                    title="Copy of Person of Indian Origin card issued by Government of India">
+                                    Copy of Person of Indian Origin card issued
+                                    by Government of India
+                                </option>
+                                <option value="41"
+                                    title="Copy of Non-resident External bank account statement in India">
+                                    Copy of Non-resident External bank account
+                                    statement in India
+                                </option>
+                                <option value="42"
+                                    title="Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer">
+                                    Copy of Visa granted and copy of appointment
+                                    letter or contract from Indian Company and
+                                    Certificate (in original) of Indian Address
+                                    issued by the employer
+                                </option>
+                                <option value="43"
+                                    title="Copy of Overseas Citizen of India card issued by Government of India">
+                                    Copy of Overseas Citizen of India card
+                                    issued by Government of India
+                                </option>
+                            </select>
+                            as proof of address,
+                            <select name="pan_dob">
+                                <option value="" selected="">
+                                    -- Please select --
+                                </option>
+                                <option value="0001">
+                                    Copy of Birth certificate issued by the
+                                    Municipal Authority or any office authorised
+                                    to issue Birth and Death Certificate by the
+                                    Registrar of Birth and Deaths or the Indian
+                                    Consulate
+                                </option>
+                                <option value="0002">
+                                    Copy of Pension payment order
+                                </option>
+                                <option value="0003">
+                                    Copy of Marriage certificate issued by
+                                    Registrar of Marriages
+                                </option>
+                                <option value="0004">
+                                    Copy of Matriculation certificate
+                                </option>
+                                <option value="0005">Copy of Passport</option>
+                                <option value="0006">
+                                    Copy of Driving licence
+                                </option>
+                                <option value="0007">
+                                    Copy of Domicile certificate issued by the
+                                    Government
+                                </option>
+                                <option value="0008">
+                                    Copy of Affidavit sworn before a magistrate
+                                    stating the date of birth
+                                </option>
+                                <option value="0009">
+                                    Copy of Elector�s photo identity card
+                                </option>
+                                <option value="0010">
+                                    Copy of Aadhaar Card issued by the Unique
+                                    Identification Authority of India
+                                </option>
+                                <option value="0011">
+                                    Copy of Central Government Health Service
+                                    Scheme Card
+                                </option>
+                                <option value="0012">
+                                    Copy of Ex-Servicemen Contributory Health
+                                    Scheme photo card
+                                </option>
+                                <option value="0013">
+                                    Copy of Photo identity card issued by the
+                                    Central Government or State Government or
+                                    Public Sector Undertaking
+                                </option>
+                                <option value="0014">
+                                    Copy of Mark sheet of recognised board
+                                </option>
+                            </select>
+                            as proof of date of birth and
+                            <select name="pan_pref">
+                                <option value="">--Please Select--</option>
+                                <option value="1">Copy of PAN card</option>
+                                <option value="2">
+                                    Copy of PAN allotment letter
+                                </option>
+                                <option value="3">No document</option>
+                            </select>
+                            as proof of PAN allotted.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>Whether you wish to have? </strong>
+                        &nbsp;
+                        <input type="checkbox" name="whethertowish">
+                        <label for="whethertowish">Physical PAN Card & e-PAN Card</label>
+                        <input type="checkbox" name="whethertowish">
+                        <label for="whethertowish">Only e-PAN Card </label>
+                        <strong><i><u>Fees Applicable</u></i></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>Other Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>1. Depository Account Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td colspan="2">
+                        <strong>DP ID: </strong>
+                        <input type="text">
+                        <strong>Client ID:</strong>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2">
+                        <strong>2. Payment Details</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td colspan="2">
+                        <strong>Online Payment</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For Paperless PAN Application: <input type="radio" name="paperless"><label for="paperless">Yes</label><input
+                type="radio" name="paperless"><label for="paperless">No</label></p>
+
+        <table class="inside-table">
+            <tbody>
+                <tr>
+                    <td>DSC
+                        <input type="radio" name="dsc" />
+                        <select name="usertype">
+                            <option value="select">--Select--</option>
+                            <option value="MINOR">Minor</option>
+                            <option value="RA">Lunatic/Idiot</option>
+                            <option value="AP">Self</option>
+                           </select>
+                    </td>
+                    <td>
+                        <a href="https://tin.tin.nsdl.com/pan/InstructionDSC.html">Guidelines for DSC User</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Upload Photo
+                    </td>
+                    <td>
+                        <input type="file" name="file1">
+                    </td>
+                    <td>Upload Signature
+                        <input type="file" name="file2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Upload Document
+                    </td>
+                    <td>
+                        <input type="file" name="file3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ALREADY UPLOADED PHOTO:
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ALREADY UPLOADED SIGANTURE:
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ALREADY UPLOADED DOCUMENTS:
+                    </td>
+                    <td>
+                        <textarea rows="7" cols="40"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
