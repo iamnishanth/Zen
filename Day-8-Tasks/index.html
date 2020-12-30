@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 8 Tasks</title>
+    <style>
+        .underline {
+            border-bottom: 1px solid black;
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+            border: dashed black;
+            border-radius: 10%;
+        }
+
+        @media screen and (max-width: 992px) {
+            .mediaquery {
+                font-size: 12px;
+            }
+        }
+
+        .cursor:hover {
+            cursor: pointer;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid black;
+        }
+
+        .span:hover {
+            font-size: 20px;
+            color: crimson;
+            font-family: monospace;
+        }
+
+        .translate {
+            height: 150px;
+            width: 150px;
+            background-color: darkcyan;
+        }
+
+        .translate:hover {
+            transform: translate(100px, 0);
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 150px;
+            background-color: darkgreen;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .clip {
+            position: absolute;
+            clip: rect(0px, 100px, 100px, 0px);
+        }
+
+        .firstlettercaps {
+            color: crimson;
+            float: left;
+            font-family: Georgia;
+            font-size: 75px;
+            line-height: 60px;
+            padding-top: 4px;
+        }
+
+        .halfround {
+            height: 100px;
+            width: 150px;
+            background-color: cyan;
+            border-top-left-radius: 25%;
+            border-bottom-right-radius: 25%;
+        }
+
+        .background-img-container {
+            height: 300px;
+            width: 300px;
+            background-color: #ccc;
+            background-image: url('https://picsum.photos/200');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .normal-box {
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .rounded-box {
+            height: 100px;
+            width: 100px;
+            border-bottom-left-radius: 25px;
+            background-color: darkslateblue;
+        }
+
+        .img-opacity:hover {
+            opacity: 10%;
+        }
+
+        .relative {
+            position: relative;
+            height: 200px;
+        }
+
+        .absolute-pos {
+            position: absolute;
+            right: 0;
+        }
+
+        .scrollbar {
+            height: 200px;
+            overflow-y: scroll;
+        }
+
+        .linear-gradient {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(180deg, white, red, blue, green);
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Equation</h2>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="underline">∂<sup>2</sup>u</td>
+                    </tr>
+                    <tr>
+                        <td>∂t<sup>2</sup></td>
+                    </tr>
+                </table>
+            </td>
+            <td>= c<sup>2</sup></td>
+            <td>
+                <table>
+                    <tr>
+                        <td class="underline">∂<sup>2</sup>u</td>
+                    </tr>
+                    <tr>
+                        <td>∂x<sup>2</sup></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <h2>Write a css rule of rounded rectangle, dashed border, grayscale for all image tags in your webpage.</h2>
+    <img class="grayscale" src="https://picsum.photos/200" />
+    <img class="grayscale" src="https://picsum.photos/200" />
+    <img class="grayscale" src="https://picsum.photos/200" />
+    <img class="grayscale" src="https://picsum.photos/200" />
+    <img class="grayscale" src="https://picsum.photos/200" />
+    <h2>Write a media rule to change only the font size of web page when it's resized.</h2>
+    <p class="mediaquery">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum rerum sed sequi obcaecati
+        id. Atque animi
+        temporibus adipisci ipsam iusto nobis quae, est, modi molestiae recusandae maxime nihil esse beatae eum
+        veritatis odio repellat fuga corrupti natus ad. Minus modi asperiores ut ipsam nisi rem error velit? Et,
+        corporis sed iusto pariatur molestias doloribus officiis? Reiciendis, et! Fugit repellat perferendis et deserunt
+        in cum rerum vero consectetur architecto molestiae dolorum praesentium qui ipsum sed necessitatibus harum,
+        pariatur laborum iure illum!</p>
+    <h2>Use HTML & CSS to display different types of cursors.</h2>
+    <p class="cursor">Hover Me!</p>
+    <h2>Write a CSS class that meets the Box Model requirement for all the div tags in your page.</h2>
+    <div class="box"></div>
+    <p>Box with Margin, Border, Padding Applied</p>
+    <h2>Write a CSS class to change size of font, color, font family when mouse moves over of span tag in your webpage.
+    </h2>
+    <span class="span">This is a text inside Span tag</span>
+    <h2>Write a CSS 2D rule with translate() property to move an element.</h2>
+    <div class="translate"></div>
+    <h2>Define a CSS class to show tooltip when mouse moved over the elements.</h2>
+    <div class="tooltip">Hover Me!
+        <span class="tooltiptext">This is a tooltip</span>
+    </div>
+    <h2>Design the below image using HTML & CSS. (First letter Caps)</h2>
+    <p>
+        <span class="firstlettercaps">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet commodi
+        exercitationem ab, molestias iure doloribus non error dolores itaque voluptate, vel eos modi asperiores
+        veritatis quisquam accusamus laboriosam ipsam vero, maiores accusantium? Cupiditate neque, fuga porro libero
+        culpa temporibus suscipit tempora est doloribus incidunt recusandae pariatur dolorem, praesentium laborum
+        sapiente id. Sunt quo repudiandae, quae recusandae maiores ex minus adipisci aut numquam fugiat quidem
+        repellendus voluptatum praesentium vitae cumque nulla dolorum animi, dicta sed, inventore vero error aspernatur
+        maxime. Itaque officiis saepe quas illo rem, veritatis distinctio! Iusto perferendis maiores, pariatur culpa
+        alias ratione sequi mollitia accusamus esse distinctio veritatis dolore, ducimus sit quas porro debitis nostrum
+        deleniti soluta eveniet officiis dolores nobis repellat a. Dolor voluptates dolorum consequatur debitis libero
+        aut! Quaerat dicta cum tempore, nesciunt reprehenderit soluta ab rerum dignissimos sed id. Minus nam praesentium
+        officia reiciendis quae ab, asperiores modi quia esse, nisi nulla autem eum qui.
+    </p>
+    <div class="relative">
+    <h2>For the below shown image apply clip property with values of right & bottom and display the output</h2>
+    <img src="https://camo.githubusercontent.com/da092347de875d0327cd7419f20b2af6866b43deafeeddd038e7428b0938ad13/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e253341414e6439476352315775514c486a616f71464c5142564a54506d71564736576649774b326a447866315241796343514a4a6875686a69743626757371703d434155"
+        class="clip" />
+    </div>
+    <h2>Use the required property to reshape a div, as example shown below.(Half rounded Rectangle)</h2>
+    <div class="halfround"></div>
+    <h2>Use CSS to set a background image should be centered and should not repeat.</h2>
+    <div class="background-img-container"></div>
+    <h2>Write CSS rules to set the direction of the flexible items inside the div element in reverse order.</h2>
+    <div class="flex-container">
+        <div class="normal-box">Box 1</div>
+        <div class="normal-box">Box 2</div>
+        <div class="normal-box">Box 3</div>
+        <div class="normal-box">Box 4</div>
+        <div class="normal-box">Box 5</div>
+        <div class="normal-box">Box 6</div>
+    </div>
+    <h2>Give the div element a rounded corner (25px radius) on the bottom left side.</h2>
+    <div class="rounded-box"></div>
+    <h2>Remove the transparency/opacity of the <img> element when the user hovers over it with the mouse pointer.</h2>
+    <img class="img-opacity" src="https://picsum.photos/200" />
+    <h2>Position the div element all the way to the right using absolute positioning.</h2>
+    <div class="relative">
+    <div class="normal-box absolute-pos"></div></div>
+    <h2>Add a scrollbar to the div element.</h2>
+    <div class="scrollbar">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias vero dignissimos neque possimus eveniet ad
+            labore quasi velit! Temporibus voluptates, sequi sint doloremque dolorum distinctio rerum perspiciatis a
+            dolores officiis aspernatur minus reiciendis repudiandae nobis ut accusamus. Obcaecati ullam sed error enim,
+            ut adipisci impedit voluptatibus hic fugit quaerat incidunt iusto deserunt. Nulla adipisci maiores
+            aspernatur placeat dolore repellat fugiat, velit quam. Sed fugit rerum maxime repellat dolorum sequi optio
+            facilis nihil rem, error, quaerat ducimus mollitia eum illo perspiciatis sit fuga molestias reprehenderit in
+            ullam alias repellendus delectus. Numquam, sapiente? Adipisci libero nihil, atque veritatis quam placeat.
+            Sit illo fugit molestiae corporis inventore sapiente quasi, cupiditate pariatur facilis nemo, rem ducimus
+            dolorem iure labore numquam voluptate et quam! Consequatur unde alias, incidunt ratione perspiciatis velit
+            ab mollitia? Ex eius sint dolores blanditiis nulla eos officiis, dignissimos illo accusamus molestias
+            dolorem porro possimus et voluptatum numquam alias at in. Ratione amet nulla iste beatae corporis
+            laboriosam. Ex rerum a illo sint impedit culpa cum ipsa deleniti pariatur alias tempore minus corrupti ab
+            saepe, maxime laborum esse qui eligendi et ipsam numquam at quibusdam minima architecto. Impedit ullam
+            similique pariatur deleniti facilis modi vero eos sapiente suscipit, unde facere fuga. Harum pariatur id
+            qui, dolore rem dolor tempore aspernatur a, quis odit exercitationem earum architecto voluptatibus. Et
+            consequuntur a obcaecati in amet distinctio hic sit, alias suscipit iste asperiores accusamus iure, ducimus
+            repudiandae labore. Sint temporibus distinctio doloribus explicabo assumenda illo iusto velit molestiae
+            voluptatibus amet adipisci vitae, possimus accusantium ratione blanditiis saepe perspiciatis ea ad hic
+            deserunt dolore! Aspernatur ipsum laborum temporibus, recusandae quasi harum itaque mollitia quae
+            repellendus iure a amet deserunt tempora similique sapiente quisquam, corporis blanditiis? Corporis,
+            dolorem! Rem consequuntur ea voluptas veniam facilis pariatur soluta eveniet reprehenderit sequi et,
+            possimus excepturi recusandae sit commodi aspernatur similique expedita debitis tempora repudiandae est
+            accusamus. Necessitatibus, error cum assumenda mollitia asperiores eligendi corporis aliquid soluta atque
+            voluptate ea autem commodi aut amet impedit aperiam? Tenetur, perspiciatis aliquid et quo deserunt quis
+            laboriosam vel pariatur ratione a ab autem nisi possimus cupiditate laborum delectus beatae iure debitis
+            amet. Voluptates facere deserunt accusamus sapiente asperiores at, saepe animi dignissimos, repellendus
+            temporibus sint, possimus est assumenda! Eaque voluptatem provident fuga possimus voluptas sed laudantium in
+            quas recusandae excepturi quisquam corporis explicabo nesciunt ullam nam ducimus quia ratione soluta,
+            delectus fugiat alias quod qui optio sapiente! Esse recusandae facilis porro nobis corporis ullam quis
+            distinctio maxime, minima tempore veritatis! Exercitationem eveniet quidem vel iure distinctio porro hic
+            alias consequatur ea voluptate libero maxime unde, illo laudantium rem recusandae! Dolor similique quaerat
+            porro sapiente optio, praesentium amet nesciunt ea fugiat qui atque assumenda. Vero, voluptate, error
+            voluptatem sit fugiat totam autem natus dicta consectetur in vel. Est voluptas ratione repellendus iure
+            praesentium delectus recusandae facere provident, minus voluptate quod? Ut animi facilis saepe, deserunt
+            voluptate, nihil nobis quasi minima pariatur ratione quaerat, sequi explicabo. Quasi, architecto. Quod
+            cumque natus reiciendis quo labore dolores officia sint. Aperiam odio error fugit inventore veniam harum
+            reiciendis. Iure.</p>
+    </div>
+    <h2>Set a linear gradient background for the div element, going from the top to bottom, transitioning from "white" to "red" to "blue" to "green".</h2>
+    <div class="linear-gradient"></div>
+    <h2>With the transform property, rotate the <div> element 45 degrees.</h2>
+    <div class="normal-box rotate">Hover to rotate</div>    
+</body>
+
+</html>
