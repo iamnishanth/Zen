@@ -1,0 +1,46 @@
+.text {
+  margin: 0;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+
+.heading {
+  font-size: 124px;
+}
+
+.text-box {
+  position: absolute;
+  top: -15px;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 100px;
+  left: 400px;
+  text-align: right;
+  width: 50%;
+  color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .text-overlay {
+    display: none;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .top-section-text {
+    font-size: 12px;
+  }
+
+  .container-fluid {
+    padding: 1rem !important;
+  }
+}
