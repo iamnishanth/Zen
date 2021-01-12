@@ -1,0 +1,38 @@
+.pagination {
+  display: inline-block;
+}
+
+.a-tags {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 0px;
+}
+
+.active {
+  background-color: #0091ea;
+  color: white;
+  border: 1px solid #0091ea;
+}
+
+.a-tags:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
