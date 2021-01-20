@@ -1,0 +1,57 @@
+.wrapper {
+  height: auto;
+  margin: auto;
+  width: 50%;
+  background-color: black;
+  box-shadow: 0 0 50px #999999;
+}
+
+.display {
+  position: relative;
+  height: 30vh;
+  background-color: black;
+  text-align: right;
+  overflow: hidden;
+}
+
+.value {
+  position: absolute;
+  color: white;
+  font-size: 64px;
+  bottom: 10px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.button.operator {
+  background: #f1a33c;
+}
+
+.button:active,
+.button:focus {
+  filter: brightness(120%);
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+}
