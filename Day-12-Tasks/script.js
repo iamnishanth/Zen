@@ -37,6 +37,14 @@ const numberElementsArray = [
 let currentInput = 0;
 
 // functions
+const checkOperator = () => {
+  const operators = ["+", "-", "*", "/"];
+  if (operators.includes(currentInput[currentInput.length - 1])) {
+    return false;
+  } else {
+    return true;
+  }
+};
 const updateCurrentInput = (newValue) => {
   if (currentInput === 0) {
     currentInput = newValue;
@@ -76,16 +84,28 @@ decimalElement.addEventListener("click", () => {
 
 // Add event listeners to operators
 additionElement.addEventListener("click", () => {
-  updateCurrentInput("+");
+  if (checkOperator()) {
+    updateCurrentInput("+");
+  }
 });
 subtractionElement.addEventListener("click", () => {
-  updateCurrentInput("-");
+  if (checkOperator()) {
+    updateCurrentInput("-");
+  }
 });
 multiplicationElement.addEventListener("click", () => {
-  updateCurrentInput("*");
+  if (checkOperator()) {
+    if (currentInput !== 0) {
+      updateCurrentInput("*");
+    }
+  }
 });
 divisionElement.addEventListener("click", () => {
-  updateCurrentInput("/");
+  if (checkOperator()) {
+    if (currentInput !== 0) {
+      updateCurrentInput("/");
+    }
+  }
 });
 equalElement.addEventListener("click", () => {
   const result = eval(currentInput);
@@ -132,3 +152,5 @@ document.addEventListener("keydown", (event) => {
     alert("Only digits are allowed!");
   }
 });
+
+
