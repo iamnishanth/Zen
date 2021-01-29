@@ -123,6 +123,10 @@ body {
   text-align: center;
 }
 
+.state-info:hover {
+  filter: brightness(125%);
+}
+
 .text-info {
   text-align: right;
   color: #ddd !important;
