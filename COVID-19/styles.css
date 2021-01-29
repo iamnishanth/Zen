@@ -1,0 +1,171 @@
+body {
+  background-color: #161625;
+  color: #ddd;
+  font-family: "Inter";
+}
+
+.cases {
+  font-weight: bold;
+  margin: 0;
+  font-size: 34px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.left {
+  height: 80vh;
+}
+
+.right {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+#myChart {
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.wrapper {
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.india-stats-group {
+  margin-top: 50px;
+}
+
+.india-stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  height: auto;
+  background-color: #1d1e33;
+  border: 5px solid #161625;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.india-stats-card:hover {
+  filter: brightness(125%);
+}
+
+.confirmed {
+  color: #fe0739;
+  font-weight: bold;
+  text-align: center;
+}
+
+.active {
+  color: #007afe;
+  text-align: center;
+}
+
+.recovered {
+  color: #27a644;
+  text-align: center;
+}
+
+.deceased {
+  color: #6b747c;
+  text-align: center;
+}
+
+.state-card {
+  height: auto;
+  background-color: #1d1e33;
+  border: 5px solid #161625;
+  padding: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.state-card:hover {
+  filter: brightness(125%);
+}
+
+.modal-content {
+  background-color: #161625 !important;
+  border-radius: 15px;
+}
+
+.btn {
+  background-color: #1d1e33;
+  border-radius: 15px;
+}
+
+.btn-close {
+  background-color: #ddd;
+}
+
+.state-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 50%;
+  background-color: #1d1e33;
+  border: 5px solid #161625;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.text-info {
+  text-align: right;
+  color: #ddd !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .left {
+    height: 60vh;
+  }
+
+  .right {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cases {
+    font-size: 28px;
+  }
+
+  .delta {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .left {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .right {
+    height: auto;
+    margin: 40px 0;
+  }
+
+  .cases {
+    font-size: 20px;
+  }
+
+  .delta {
+    font-size: 12px;
+  }
+}

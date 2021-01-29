@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="left col-md-6">
+            <div class="wrapper">
+              <div class="container">
+                <h1 class="title">
+                  COVID-19 <span style="color: crimson">INDIA</span>
+                </h1>
+                <div class="row india-stats-group">
+                  <div
+                    class="col-6 india-stats-card confirmed"
+                    onclick="setChartCases(`dailyconfirmed`, `#fe0739`)"
+                  >
+                    <div>
+                      Confirmed
+                      <h6 class="delta deltaconfirmed mt-2"></h6>
+                      <h1 class="cases confirmed-cases mt-2">4342343</h1>
+                    </div>
+                  </div>
+                  <div
+                    class="col-6 india-stats-card active"
+                    onclick="setChartCases(`dailyactive`, `#007afe`)"
+                  >
+                    <div>
+                      Active
+                      <h1 class="cases active-cases mt-3">4234234</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class="col-6 india-stats-card recovered"
+                    onclick="setChartCases(`dailyrecovered`, `#27a644`)"
+                  >
+                    <div>
+                      Recovered
+                      <h6 class="delta deltarecovered mt-2"></h6>
+                      <h1 class="cases recovered-cases mt-2">4234234</h1>
+                    </div>
+                  </div>
+                  <div
+                    class="col-6 india-stats-card deceased"
+                    onclick="setChartCases(`dailydeceased`, `#6b747c`)"
+                  >
+                    <div>
+                      Deceased
+                      <h6 class="delta deltadeceased mt-2"></h6>
+                      <h1 class="cases deceased-cases mt-2">312312</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right col-md-6">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <p class="text-info">*Last 30 days</p>
+        <div class="container-fluid">
+          <h1 class="title">States</h1>
+          <div class="row states"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="stateLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title title" id="stateLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6 state-info state-confirmed confirmed">
+                  Confirmed
+                </div>
+                <div class="col-6 state-info state-active active">Active</div>
+                <div class="col-6 state-info state-recovered recovered">
+                  Recovered
+                </div>
+                <div class="col-6 state-info state-deceased deceased">
+                  Deceased
+                </div>
+              </div>
+              <h1 class="title">Districts</h1>
+              <div class="row districts"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
