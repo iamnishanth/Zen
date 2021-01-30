@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #ddd;
+  font-family: "Circular Std Book", sans-serif;
+}
+
+.nav-logo {
+  width: 80px;
+}
+
+.nav-myaccount {
+  height: 30px;
+}
+
+.jumbotron {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.jumbotron-content {
+  width: 50%;
+}
+
+.btn {
+  padding: 5px 15px;
+}
+
+.btn-danger {
+  background-color: #ef0914;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.row-container {
+  margin: 20px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.posters {
+  height: 225px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.posters:hover {
+  transform: scale(1.1);
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-content {
+  background-color: #111 !important;
+  border-radius: 25px;
+}
+
+.modal-footer {
+  border: 0;
+}
+
+.movie-backdrop {
+  padding: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.movie-title {
+  margin: 10px 5px;
+}
+
+.movie-rating {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.movie-overview {
+  margin-left: 5px;
+}
+
+.movie-play {
+  width: 100%;
+}
+
+@media screen and (max-width: 728px) {
+  .jumbotron {
+    display: none;
+  }
+}
