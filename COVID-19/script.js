@@ -50,8 +50,12 @@ const setChart = (data, color) => {
 };
 
 const fetchData = (url) => {
-  let data = fetch(url).then((data) => data.json());
-  return data;
+  try {
+    let data = fetch(url).then((data) => data.json());
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const setChartCases = async (caseType, color) => {
@@ -126,53 +130,54 @@ const showStateDetails = (selectedElement) => {
 };
 
 (async () => {
-  stateReport = await fetchData("https://api.covid19india.org/data.json");
-  districtReport = await fetchData(
-    "https://api.covid19india.org/state_district_wise.json"
-  );
+  try {
+    stateReport = await fetchData("https://api.covid19india.org/data.json");
+    districtReport = await fetchData(
+      "https://api.covid19india.org/state_district_wise.json"
+    );
 
-  console.log("Click on cards to change the chart data");
-  setChartCases("dailyconfirmed", "#fe0739");
-  let todayCaseReport = stateReport;
-  let totalConfirmed = +todayCaseReport["statewise"][0]["confirmed"];
-  let deltaConfirmed = `[+${
-    todayCaseReport["cases_time_series"][
-      todayCaseReport.cases_time_series.length - 1
-    ]["dailyconfirmed"]
-  }]`;
-  let totalActive = +todayCaseReport["statewise"][0]["active"];
-  let totalRecovered = +todayCaseReport["statewise"][0]["recovered"];
-  let deltaRecovered = `[+${
-    todayCaseReport["cases_time_series"][
-      todayCaseReport.cases_time_series.length - 1
-    ]["dailyrecovered"]
-  }]`;
-  let totalDeceased = +todayCaseReport["statewise"][0]["deaths"];
-  let deltaDeceased = `[+${
-    todayCaseReport["cases_time_series"][
-      todayCaseReport.cases_time_series.length - 1
-    ]["dailydeceased"]
-  }]`;
-  document.querySelector(
-    ".confirmed-cases"
-  ).innerText = totalConfirmed.toLocaleString();
-  document.querySelector(
-    ".active-cases"
-  ).innerText = totalActive.toLocaleString();
-  document.querySelector(
-    ".recovered-cases"
-  ).innerText = totalRecovered.toLocaleString();
-  document.querySelector(
-    ".deceased-cases"
-  ).innerText = totalDeceased.toLocaleString();
-  document.querySelector(".deltaconfirmed").innerText = deltaConfirmed;
-  document.querySelector(".deltarecovered").innerText = deltaRecovered;
-  document.querySelector(".deltadeceased").innerText = deltaDeceased;
+    console.log("Click on cards to change the chart data");
+    setChartCases("dailyconfirmed", "#fe0739");
+    let todayCaseReport = stateReport;
+    let totalConfirmed = +todayCaseReport["statewise"][0]["confirmed"];
+    let deltaConfirmed = `[+${
+      todayCaseReport["cases_time_series"][
+        todayCaseReport.cases_time_series.length - 1
+      ]["dailyconfirmed"]
+    }]`;
+    let totalActive = +todayCaseReport["statewise"][0]["active"];
+    let totalRecovered = +todayCaseReport["statewise"][0]["recovered"];
+    let deltaRecovered = `[+${
+      todayCaseReport["cases_time_series"][
+        todayCaseReport.cases_time_series.length - 1
+      ]["dailyrecovered"]
+    }]`;
+    let totalDeceased = +todayCaseReport["statewise"][0]["deaths"];
+    let deltaDeceased = `[+${
+      todayCaseReport["cases_time_series"][
+        todayCaseReport.cases_time_series.length - 1
+      ]["dailydeceased"]
+    }]`;
+    document.querySelector(
+      ".confirmed-cases"
+    ).innerText = totalConfirmed.toLocaleString();
+    document.querySelector(
+      ".active-cases"
+    ).innerText = totalActive.toLocaleString();
+    document.querySelector(
+      ".recovered-cases"
+    ).innerText = totalRecovered.toLocaleString();
+    document.querySelector(
+      ".deceased-cases"
+    ).innerText = totalDeceased.toLocaleString();
+    document.querySelector(".deltaconfirmed").innerText = deltaConfirmed;
+    document.querySelector(".deltarecovered").innerText = deltaRecovered;
+    document.querySelector(".deltadeceased").innerText = deltaDeceased;
 
-  let states = document.querySelector(".states");
-  let statesData = "";
-  for (let i = 1; i < todayCaseReport["statewise"].length; i++) {
-    statesData += `<div class="col-md-4 state-card" onclick="showStateDetails(this)" data-bs-toggle="modal"
+    let states = document.querySelector(".states");
+    let statesData = "";
+    for (let i = 1; i < todayCaseReport["statewise"].length; i++) {
+      statesData += `<div class="col-md-4 state-card" onclick="showStateDetails(this)" data-bs-toggle="modal"
     data-bs-target="#exampleModal">
     <div>
     <h3 class="state-name confirmed">${
@@ -185,6 +190,10 @@ const showStateDetails = (selectedElement) => {
       todayCaseReport["statewise"][i]["confirmed"]
     ).toLocaleString()}</h1></div>
   </div>`;
+    }
+    states.innerHTML = statesData;
+  } catch (err) {
+    console.log(err);
   }
-  states.innerHTML = statesData;
 })();
+
