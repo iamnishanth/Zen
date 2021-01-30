@@ -67,16 +67,19 @@ body {
 
 .active {
   color: #007afe;
+  font-weight: bold;
   text-align: center;
 }
 
 .recovered {
   color: #27a644;
+  font-weight: bold;
   text-align: center;
 }
 
 .deceased {
   color: #6b747c;
+  font-weight: bold;
   text-align: center;
 }
 
