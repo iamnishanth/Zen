@@ -160,6 +160,11 @@ const createHomePage = () => {
   createCategories();
 };
 
-(async () => {
-  createHomePage();
-})();
+createHomePage();
+
+document.querySelector(".query").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    handleQuerySubmit();
+  }
+});
+
