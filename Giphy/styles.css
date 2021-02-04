@@ -127,6 +127,10 @@ body {
   cursor: pointer;
 }
 
+.result-card {
+  border-radius: 10px;
+}
+
 .modal-body {
   padding: 0;
 }
