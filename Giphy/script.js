@@ -107,7 +107,7 @@ const createSubCategories = async (selectedCategory) => {
     let categoriesRow = document.querySelector(".categories-row");
     let categoriesRowItem = `<h3 class="heading col-12"><a href="" class="heading goback"><i class="fas fa-long-arrow-alt-left"></i> </a> ${selectedCategory}</h3>`;
     for (let item of data.data) {
-      categoriesRowItem += `<div class="col-6 col-md-4 categories-row-item" ><div class="card bg-dark text-white" onclick="handleSubCategorySubmit(this)">
+      categoriesRowItem += `<div class="col-6 col-md-4 categories-row-item" ><div class="card bg-dark text-white" onclick="handleSubCategoryClick(this)">
         <img src="${
           item.gif.images.fixed_height_downsampled.url ||
           item.gif.images.fixed_height.url
