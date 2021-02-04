@@ -134,7 +134,7 @@ const createResultPage = async (query) => {
   let topWrapper = document.querySelector(".top-wrapper");
   let topWrapperItems = `<h1 class="heading">${query.toLowerCase()}</h1><div class="card-columns">`;
   for (let item of data.data) {
-    topWrapperItems += `<div class="card"><img class="card-img" src="${
+    topWrapperItems += `<div class="card result-card"><img class="card-img" src="${
       item.images.fixed_height_downsampled.url || item.images.fixed_height.url
     }" alt="${item.id}" data-toggle="modal"
     data-target="#gifModal" onclick="createModal(this)" /></div>`;
