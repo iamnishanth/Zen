@@ -1,0 +1,154 @@
+body {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  background-color: rgb(65, 196, 222);
+  animation: 14s ease 0s infinite alternate none running myanimation;
+}
+
+.container-fluid {
+  background-color: rgb(65, 196, 222);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 14s ease 0s infinite alternate none running myanimation;
+}
+
+.no-flex {
+  display: block;
+  height: 100%;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.user-name-input-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.user-name {
+  height: 50px;
+}
+
+.user-name-btn {
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.view-leaderboard {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 10px;
+}
+
+.view-leaderboard:hover {
+  color: #1c1f23;
+}
+
+.wrapper {
+  width: 70vw;
+}
+
+.option-btn-group {
+  margin: 50px 0;
+}
+
+.option-btn {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1f23;
+  color: white;
+}
+
+.option-btn:hover {
+  color: white;
+  filter: brightness(120%);
+}
+
+.col-sm-6 {
+  margin-bottom: 10px;
+}
+
+.correct {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.leaderboard {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #1c1f23;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 3px solid #1c1f23 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .question {
+    font-size: 16px;
+  }
+
+  .option-btn {
+    max-height: 50px;
+    font-size: 14px;
+  }
+
+  .leaderboard {
+    width: 100%;
+  }
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  background-color: rgb(65, 196, 222) !important;
+}
+
+@keyframes myanimation {
+  25% {
+    background-color: rgb(65, 196, 222);
+  }
+  50% {
+    background-color: rgb(140, 199, 63);
+  }
+  75% {
+    background-color: rgb(243, 211, 51);
+  }
+  100% {
+    background-color: rgb(247, 142, 86);
+  }
+}

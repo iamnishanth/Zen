@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <!-- Google Fonts  -->
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Montserrat"
+      type="text/css"
+    />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="top-wrapper">
+        <div class="user-name-input-form">
+          <img class="logo" src="./logo.svg" alt="logo" />
+          <input
+            class="user-name form-control"
+            type="text"
+            placeholder="Enter Name"
+          />
+          <button
+            class="user-name-btn btn-dark"
+            onclick="handleUserNameSubmit()"
+          >
+            Enter
+          </button>
+          <a class="view-leaderboard" href="#" onclick="buildLeaderboard()"
+            >View Leaderboard</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
