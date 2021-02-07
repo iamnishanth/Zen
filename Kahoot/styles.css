@@ -3,7 +3,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(65, 196, 222);
-  animation: 14s ease 0s infinite alternate none running myanimation;
 }
 
 .container-fluid {
