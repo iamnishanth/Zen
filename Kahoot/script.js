@@ -22,8 +22,8 @@ const handleUserNameSubmit = async () => {
   userName = document.querySelector(".user-name").value;
   data = await fetchData(API_URL);
   buildQuestionPage();
-  let container = document.querySelector(".container-fluid");
-  container.classList.add("paused"); // Pausing Animation
+  let body = document.querySelector("body");
+  body.classList.add("paused"); // Pausing Animation
   time = setInterval(() => {
     if (timeRemaining !== 0) {
       timeRemaining--;
@@ -158,6 +158,8 @@ const buildGameOverPage = async () => {
     </tr>`;
     i++;
   }
+  let body = document.querySelector("body");
+  body.classList.remove("paused"); //Pausing Animation
   let container = document.querySelector(".container-fluid");
   container.classList.add("no-flex", "pt-5");
   let topWrapper = document.querySelector(".top-wrapper");
@@ -184,3 +186,4 @@ document.querySelector(".user-name").addEventListener("keydown", (event) => {
     handleUserNameSubmit();
   }
 });
+
