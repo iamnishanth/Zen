@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZenMedia</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-wrapper container">
+      <div class="wrapper">
+        <h1 class="title heading">ZenMedia</h1>
+        <p class="sub-text">Where your queries are addressed</p>
+        <a
+          href="#"
+          class="create-post"
+          data-bs-toggle="modal"
+          data-bs-target="#createPostModal"
+          >Create a post
+          <i class="arrow-right fas fa-arrow-alt-circle-right"></i
+        ></a>
+      </div>
+      <div class="container">
+        <h3 class="heading">Latest Posts</h3>
+        <div class="row post-wrapper"></div>
+      </div>
+    </div>
+    <!-- Create Post Modal -->
+    <div
+      class="modal fade"
+      id="createPostModal"
+      tabindex="-1"
+      aria-labelledby="createPostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Create a post</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="heading" for="post-user-name">Name</label>
+            <input
+              name="post-user-name"
+              class="form-control post-username"
+              type="text"
+              placeholder="Enter name"
+              autocomplete="off"
+              required
+            />
+            <label class="heading" for="post-pwd">Password</label>
+            <input
+              name="post-pwd"
+              class="form-control post-pwd"
+              type="text"
+              placeholder="Enter post password (to delete post)"
+              autocomplete="off"
+              required
+            />
+            <label class="heading" for="post-title">Title</label>
+            <input
+              name="post-title"
+              class="form-control post-title"
+              type="text"
+              placeholder="Enter post title"
+              autocomplete="off"
+              required
+            />
+            <label class="heading" for="post-query">Query</label>
+            <textarea
+              name="post-query"
+              class="form-control query-box"
+              placeholder="Enter query"
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-green"
+              data-bs-dismiss="modal"
+              onclick="createNewPost()"
+            >
+              Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Create Comment Modal -->
+    <div
+      class="modal fade"
+      id="createCommentModal"
+      tabindex="-1"
+      aria-labelledby="createCommentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createCommentModalLabel">
+              Add comment
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="heading" for="comment-user-name">Name</label>
+            <input
+              name="comment-user-name"
+              class="form-control comment-username"
+              type="text"
+              placeholder="Enter name"
+              autocomplete="off"
+              required
+            />
+            <label class="heading" for="comment-box">Comment</label>
+            <textarea
+              name="comment-box"
+              class="form-control comment-box"
+              placeholder="Enter comment"
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-green"
+              data-bs-dismiss="modal"
+              onclick="createNewComment()"
+            >
+              Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delete Post Modal -->
+    <div
+      class="modal fade"
+      id="deletePostModal"
+      tabindex="-1"
+      aria-labelledby="deletePostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deletePostModalLabel">Are you sure?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label class="heading" for="delete-password">Password</label>
+            <input
+              name="delete-password"
+              class="form-control delete-password"
+              type="text"
+              placeholder="Enter password to delete"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-green"
+              data-bs-dismiss="modal"
+              onclick="deletePost()"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

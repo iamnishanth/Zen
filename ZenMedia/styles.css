@@ -1,0 +1,200 @@
+body {
+  background-color: #212529 !important;
+  font-family: monospace;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.title {
+  color: #14e885 !important;
+  margin-left: 20px;
+  font-size: 64px;
+}
+
+.wrapper {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.sub-text {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.create-post {
+  text-decoration: none;
+  font-size: 18px;
+  color: #14e885;
+  font-weight: bold;
+}
+
+.create-post:hover {
+  color: #14e885;
+  text-decoration: underline;
+}
+
+.a-link :hover {
+  transform: translateX(-20%);
+}
+
+.arrow-right {
+  transition: 150ms ease-in;
+}
+
+.arrow-right:hover {
+  transform: rotate(90deg);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.modal-content {
+  border: 0;
+}
+
+.modal-header {
+  border: 0;
+}
+
+.modal-body label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.query-box {
+  height: 100px;
+}
+
+.comment-box {
+  height: 80px;
+}
+
+.modal-footer {
+  border: 0;
+}
+
+.btn-green {
+  background-color: #14e885;
+  transition: all 200ms ease-in;
+}
+
+.btn-green:hover {
+  transform: scale(1.05);
+}
+
+.btn-green:focus {
+  box-shadow: none;
+  filter: brightness(120%);
+}
+
+.card-wrapper {
+  padding: 5px;
+}
+
+.card {
+  background-color: #212529;
+  min-height: 150px;
+  max-height: 150px;
+  overflow: hidden;
+  color: #14e885;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #14e885;
+  cursor: pointer;
+}
+
+.add-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.post-details-wrapper {
+  text-align: center;
+}
+
+.post-details-wrapper h6 {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.post-details-wrapper h3 {
+  color: #14e885;
+}
+
+.post-details-name {
+  color: #14e885;
+}
+
+.post-details-comments-title {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.post-details-coa {
+  text-align: left;
+}
+
+.post-details-coa .btn-green:hover {
+  transform: none;
+  filter: brightness(80%);
+}
+
+.post-details-coa .btn-green {
+  margin: 2.5px;
+}
+
+.comment-card {
+  text-align: left;
+  width: 100%;
+  cursor: auto;
+  min-height: fit-content;
+  max-height: fit-content;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.comment-card blockquote {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.comment-card .blockquote-footer {
+  color: #14e885;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .wrapper {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .post-details-wrapper h6 {
+    font-size: 14px;
+  }
+}
