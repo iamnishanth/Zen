@@ -4,9 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Customer Invoice</title>
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="text-center">Customer</h1>
+          <label for="customerID">Customer ID</label>
+          <input
+            class="form-control"
+            type="text"
+            id="customerID"
+            placeholder="Enter customer id"
+            autocomplete="off"
+          />
+          <label for="customerName">Customer Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="customerName"
+            placeholder="Enter customer name"
+            autocomplete="off"
+          />
+          <label for="customerDiscount">Customer Discount</label>
+          <input
+            class="form-control"
+            type="text"
+            id="customerDiscount"
+            placeholder="Enter customer discount"
+            autocomplete="off"
+          />
+          <button class="btn btn-primary mt-2" id="customerSubmit">
+            Submit
+          </button>
+          <h3 class="mt-2">Customer Objects</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Discount</th>
+              </tr>
+            </thead>
+            <tbody class="customerTable"></tbody>
+          </table>
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-center">Invoice</h1>
+          <label for="invoiceID">Invoice ID</label>
+          <input
+            class="form-control"
+            type="text"
+            id="invoiceID"
+            placeholder="Enter invoice id"
+            autocomplete="off"
+          />
+          <label for="invoiceCustomer">Invoice Customer</label>
+          <select class="form-control" id="invoiceCustomer"></select>
+          <label for="invoiceAmount">Invoice Amount</label>
+          <input
+            class="form-control"
+            type="text"
+            id="invoiceAmount"
+            placeholder="Enter invoice amount"
+            autocomplete="off"
+          />
+          <button class="btn btn-primary mt-2" id="invoiceSubmit">
+            Submit
+          </button>
+          <h3 class="mt-2">Invoice Objects</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody class="invoiceTable"></tbody>
+          </table>
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-center">Account</h1>
+          <label for="accountID">Account ID</label>
+          <input
+            class="form-control"
+            type="text"
+            id="accountID"
+            placeholder="Enter account id"
+            autocomplete="off"
+          />
+          <label for="accountCustomer">Account Customer</label>
+          <select class="form-control" id="accountCustomer"></select>
+          <label for="accountBalance">Account Balance</label>
+          <input
+            class="form-control"
+            type="text"
+            id="accountBalance"
+            placeholder="Enter account balance"
+            autocomplete="off"
+          />
+          <button class="btn btn-primary mt-2" id="accountSubmit">
+            Submit
+          </button>
+          <h3 class="mt-2">Account Objects</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tbody class="accountTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
     <script src="index.js"></script>
   </body>
 </html>
