@@ -3,7 +3,6 @@ let word;
 let spanElementArray = [];
 let guessRemaining = 6;
 let guessedLetters = [];
-let eventReady = false;
 
 // fetch function
 const fetchData = async () => {
