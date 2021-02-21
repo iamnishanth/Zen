@@ -1,0 +1,68 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+}
+
+.fas {
+  margin-right: 5px;
+}
+
+.nav-items {
+  margin-right: 20px;
+  display: none;
+}
+
+.inbox:hover {
+  color: red !important;
+}
+
+.sent:hover {
+  color: #4b86f4 !important;
+}
+
+.drafts:hover {
+  color: #f1bb04 !important;
+}
+
+.compose:hover {
+  color: #4ba853 !important;
+}
+
+.btn-primary {
+  background-color: #1a73e8 !important;
+}
+
+.btn-primary:hover {
+  filter: brightness(90%);
+}
+
+.email-container {
+  border: 0.5px solid #ddd;
+}
+
+.email-item {
+  border-bottom: 0.5px solid #ddd;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heading {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.email-item:hover {
+  box-shadow: 0 0 15px 0 #ddd;
+}
+
+.email-from {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+}
