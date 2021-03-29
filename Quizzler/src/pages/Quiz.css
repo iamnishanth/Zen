@@ -1,0 +1,11 @@
+.wrapper {
+  width: 70vw;
+  padding-top: 25vh;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 100%;
+    padding-top: 10vh;
+  }
+}

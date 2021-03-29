@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Roboto";
+  color: rgb(68, 68, 68);
+}
+
+.mt-lg {
+  margin-top: 100px;
+}
+
+.fas {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: rgb(68, 68, 68);
+}
+
+.a-tag {
+  color: inherit;
+}
+
+.a-tag:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.opt-btn {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 778px) {
+  .mt-lg {
+    margin-top: 75px;
+  }
+}
